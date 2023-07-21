@@ -1,0 +1,52 @@
+#HotelName{
+    text-align: center;
+    font-weight: bold;
+    color: hsl(29, 80%, 66%);
+}
+.menu-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px;
+
+}
+.Card{
+    flex: 1;
+}
+.Card-container{
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: fit-content;
+    margin: 0px 5px 5px 5px;
+    
+}
+  
+.card-no{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1ebae; /* You can use any color you prefer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meal-category{
+    font-weight: bold;
+    font-size: larger;
+}
+.dish-name,.dish-price,.dish-discription{
+    font-weight: bold;
+}
+.img{
+    height: 10rem;
+    width: 15rem;
+}

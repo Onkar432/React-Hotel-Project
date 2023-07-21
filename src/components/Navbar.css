@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px; /* Optional: Add spacing between buttons */
+}
+
+.btn-group-item {
+  border: none;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-group-item:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-group-item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-group-item:hover {
+  background-color: #f0f0f0; /* Optional: Add a hover background color */
+  color: rebeccapurple; /* Optional: Change text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a hover shadow effect */
+}
+
+.btn-group-item:focus {
+  outline: none;
+}
+
+.btn-group-item:after {
+  content: "✔️";
+  margin-left: 0.5rem;
+  display: inline-block;
+  color: rebeccapurple;
+  position: absolute;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+
+.btn-group-item--active:after {
+  opacity: 1;
+  transform: translateY(-2px);
+}
